@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+.section-padding{
+    padding: 30px 0px;
+}
+.section-heading h1{
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+}
+.section-heading h1::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 400px;
+    top:120%;
+    background: #0b5ed7;;
+    left: 50%;
+    transform: translateX(-50%);
+}
+img{
+    width: 100%;
+}
+.logo{
+    text-align: center;
+}
+.logo img{
+    width: 200px;
+}
+.navbar-align{
+    align-items: center;
+    padding: 20px 0px;
+}
+.navbar-nav li a{
+    padding: 10px 20px !important;
+    font-size: 18px !important;
+}
+.navbar-nav a:hover{
+    background-color: #0b5ed7 !important;
+    color: #fff !important;    
+}
+.banner_img{
+    position: relative; 
+}
+.card_area {
+    background: url('./img/mern_banner.png') no-repeat center/cover;   
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30PX 0PX;
+}
+.card {    
+    height: 350px;
+    margin: 15px;
+    align-items: center;
+}
+.card img{
+    width:200px;
+    height: 170px;
+}
+
+#age-checking-area{
+    padding: 40px 0px;
+}
+.age-card-area{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.age-card img{
+    width: 100%;
+    height: 250px;
+}
+#inputAge{
+    padding:5px;
+    width: 200px;
+    margin-top: 3px;
+}
+#ageCheckBtn {
+	margin-top: 15px;
+	width: 120px;
+}
+.input-age {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+footer{
+    background-color: #eee;
+}
+
+@media (max-width:991px) {
+    .banner_img>img {
+        display: none;
+    }
+}
+@media (max-width:767px) {   
+    .banner_img>img {
+        display: none;
+    }
+    .card {    
+        height: 320px;
+    }
+}
+
+
+@media (max-width:575px) {
+    .card img{
+        width:150px;
+        height: 100px;
+    }
+    .col-sm-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    .banner_img>img {
+        display: none;
+    }
+    .card {    
+        height: 250px;
+    }
+}
+

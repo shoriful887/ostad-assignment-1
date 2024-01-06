@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ostad Assignment - 1</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Navbar Area  Start-->
+       <section id="navbar-area">
+       <div class="container">
+        <div class="row navbar-align">
+            <div class="col-md-2 logo">
+              <a href=""><img src="./img/logo.png" alt="logo"></a>
+            </div>
+            <div class="col-md-10 ">
+              <nav class="navbar navbar-expand-md float-md-end ">
+                <div class="container-fluid">                 
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-lg-0" style="--bs-scroll-height: 100px;">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">About Us</a>
+                      </li>                      
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Course Module
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Mongo DB</a></li>
+                          <li><a class="dropdown-item" href="#">Express JS</a></li>
+                          <li><a class="dropdown-item" href="#">React JS</a></li>
+                          <li><a class="dropdown-item" href="#">Node JS</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                      </li>                   
+                    </ul>                   
+                  </div>
+                </div>
+              </nav>                
+            </div>            
+        </div>
+       </div>
+<!-- Navbar Area  End-->
+       </section>
+<!-- Banner Area  Start-->
+       <section id="banner-area">
+        <div class="container">
+          <div class="section-heading section-padding">
+            <h1>Banner</h1>
+          </div>
+          <div class="row ">
+            <div class="col-md-12">
+              <div class="banner_img">
+                <!-- <img src="./img/mern_banner.png" alt=""> -->
+                <div class="card_area">                 
+                  <div class="single_cards col-md-6 col-sm-12 col-lg-3 col-xs-12">
+                    <div class="card">
+                      <img src="./img/mongo_db.png" class="card-img-top" alt="Child Image">
+                      <div class="card-body">
+                        <h5 class="card-title">Mongo DB</h5>
+                        <p class="card-text">MongoDB is a open Source database program</p>                        
+                        <button class="btn btn-primary">Read More</button>
+                      </div>
+                    </div>
+                 </div>
+                 <div class="single_cards col-md-6 col-sm-12 col-lg-3 col-xs-12">
+                  <div class="card">
+                    <img src="./img/express-js.png" class="card-img-top" alt="Child Image">
+                    <div class="card-body">
+                      <h5 class="card-title">Express JS</h5>
+                      <p class="card-text">Express.js is a back end web application</p>
+                      <button class="btn btn-primary">Read More</button>
+                    </div>
+                  </div>
+               </div>
+               <div class="single_cards col-md-6 col-sm-12 col-lg-3 col-xs-12">
+                <div class="card">
+                  <img src="./img/React_Logo_SVG.svg.png" class="card-img-top" alt="Child Image">
+                  <div class="card-body">
+                    <h5 class="card-title">React JS</h5>
+                    <p class="card-text">React is a open-source front-end JavaScript library</p>
+                    <button class="btn btn-primary">Read More</button>
+                  </div>
+                </div>
+             </div>
+             <div class="single_cards col-md-6 col-sm-12 col-lg-3 col-xs-12">
+              <div class="card">
+                <img src="./img/node_js.png" class="card-img-top" alt="Child Image">
+                <div class="card-body">
+                  <h5 class="card-title">Node JS</h5>
+                  <p class="card-text">Node.js is a JavaScript runtime environment</p>
+                  <button class="btn btn-primary">Read More</button>
+                </div>
+              </div>
+           </div>             
+              
+              </div>
+            </div>
+          </div>
+        </div>
+       </div>
+      </section>
+<!-- Banner Area  End-->
+<!-- age checker area Start -->
+<section id="age-checking-area">
+  <div class="container">
+    <div class="section-heading section-padding">
+      <h1>Age Checker</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-sm-12 col-lg-6 col-xs-12 input-age">
+          <label for="inputAge">Input Your Age</label> 
+          <input type="number" min="0" max="200" id="inputAge">
+            <button class="btn btn-primary" id="ageCheckBtn" onclick="ageChecker()" >Check Age</button>
+        </div>
+        <div class="single_cards col-md-6 col-sm-12 col-lg-6 col-xs-12 ">
+          <div class="card age-card ">
+            <img src="https://placehold.co/400X250" class="age-checker-card" alt="Placeholder">
+            <div class="card-body">
+              <h1 class="card-title age-checker-card-title">Placeholder Text</h1>
+            </div>
+          </div>
+       </div>     
+       
+    </div>
+  </div>
+
+</section>
+<!-- age checker area End -->
+<!-- Footer area Start -->
+<footer>
+  <div class="container">
+    <div class="row section-padding">
+        <div class="col-md-6 col-sm-12 col-lg-3 col-xs-12">
+            <h1>MERN</h1>
+            <p>MERN is the Short form Of MongoDB, Express Js, React Js, Node Js</p>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-3 col-xs-12">
+          <h4>Course Module</h4>
+          <ul class="">
+            <li><a class="dropdown-item" href="#">Mongo DB</a></li>
+            <li><a class="dropdown-item" href="#">Express JS</a></li>
+            <li><a class="dropdown-item" href="#">React JS</a></li>
+            <li><a class="dropdown-item" href="#">Node JS</a></li>
+          </ul>
+
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-3 col-xs-12">
+          <h4>Social Media</h4>
+          <ul class="">
+            <li><a class="dropdown-item" href="#">Facebook</a></li>
+            <li><a class="dropdown-item" href="#">Youtube</a></li>
+            <li><a class="dropdown-item" href="#">Twitter</a></li>
+            <li><a class="dropdown-item" href="#">linked In</a></li>
+          </ul>
+        </div>
+        <div class="col-md-6 col-sm-12 col-lg-3 col-xs-12">
+          <h4>Useful Links</h4>
+          <ul class="">
+            <li><a class="dropdown-item" href="#">Ostad App</a></li>
+            <li><a class="dropdown-item" href="#">W3schools</a></li>
+            <li><a class="dropdown-item" href="#">Bootstrap</a></li>            
+          </ul>
+        </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer area End -->
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
